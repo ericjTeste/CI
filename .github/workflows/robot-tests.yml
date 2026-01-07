@@ -29,7 +29,7 @@ jobs:
       - name: Run Robot Framework Tests
         # Se usar Selenium, o Chrome já vem pré-instalado no runner ubuntu-latest
         run: |
-          robot -d results tests/
+          robot -d results .
 
       - name: Upload Test Results
         if: always() # Garante que o relatório seja gerado mesmo se os testes falharem
